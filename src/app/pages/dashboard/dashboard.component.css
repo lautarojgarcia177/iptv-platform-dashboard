@@ -1,3 +1,7 @@
 .card {
-    margin: 1rem;
+    margin-bottom: 1rem;
+}
+
+.col {
+    padding: 0;
 }
