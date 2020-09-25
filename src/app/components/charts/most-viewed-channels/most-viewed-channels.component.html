@@ -1,16 +1,15 @@
 <table class="table table-hover">
     <thead>
       <tr>
+        <th scope="col"></th>
         <th scope="col">Programa</th>
         <th scope="col">Usuarios</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let channel of data">
-        <td scope="row">
-            <img [src]="channel.image">
-            {{channel.name}}
-        </td>
+        <td><img [src]="channel.image"></td>
+        <td>{{channel.name}}</td>
         <td>{{channel.users}}</td>
       </tr>
     </tbody>

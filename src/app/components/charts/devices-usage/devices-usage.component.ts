@@ -15,6 +15,7 @@ export class DevicesUsageComponent implements OnInit {
             type: 'shadow'
         }
     },
+    color: ['#003366', '#006699', '#4cabce', '#e5323e', '#e5323e', '#e5323e', '#e5323e'],
     xAxis: {
         type: 'value',
     },
@@ -26,7 +27,15 @@ export class DevicesUsageComponent implements OnInit {
         {
             name: 'total',
             type: 'bar',
-            data: [138, 82, 53, 8, 7, 5, 2]
+            data: [
+              { value: 138, itemStyle: { color: 'blue'}},
+              { value: 82, itemStyle: { color: 'red'}},
+              { value: 53, itemStyle: { color: 'green'}},
+              { value: 40, itemStyle: { color: 'cyan'}},
+              { value: 32, itemStyle: { color: 'magenta'}},
+              { value: 21, itemStyle: { color: 'gray'}},
+              { value: 10, itemStyle: { color: 'brown'}},
+            ],
         },
     ]
 };
