@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-body">
-      <h5 class="card-title">{{title}}</h5>
-      <ngx-charts-line-chart
+      <!-- <h5 class="card-title">{{title}}</h5> -->
+      <!-- <ngx-charts-line-chart
       [scheme]="colorScheme"
       [legend]="legend"
       [legendPosition]="'below'"
@@ -18,6 +18,7 @@
       (activate)="onActivate($event)"
       (deactivate)="onDeactivate($event)"
       >
-    </ngx-charts-line-chart>
+    </ngx-charts-line-chart> -->
+    <div echarts [options]="chartOption" style="height: 400px"></div>
     </div>
   </div>

@@ -8,6 +8,7 @@ import { UserPlatformComponent } from './components/charts/user-platform/user-pl
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChannelsViewsComponent } from './components/charts/channels-views/channels-views.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,10 @@ import { ChannelsViewsComponent } from './components/charts/channels-views/chann
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

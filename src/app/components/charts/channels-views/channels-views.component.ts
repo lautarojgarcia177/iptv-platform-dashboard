@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { multi } from './data';
+import { EChartOption } from 'echarts';
 
 @Component({
   selector: 'app-channels-views',
@@ -7,6 +8,22 @@ import { multi } from './data';
   styleUrls: ['./channels-views.component.css']
 })
 export class ChannelsViewsComponent {
+
+  chartOption: EChartOption = {
+    xAxis: {
+      type: 'category',
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    },
+    yAxis: {
+      type: 'value',
+    },
+    series: [
+      {
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line',
+      }
+    ],
+  }
 
   @Input() title = 'Total de usuarios por hora';
 
