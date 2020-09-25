@@ -14,6 +14,7 @@ import { DeviceVisualizationComponent } from './components/charts/device-visuali
 import { MostViewedChannelsNowComponent } from './components/charts/most-viewed-channels-now/most-viewed-channels-now.component';
 import { TotalUsersComponent } from './components/charts/total-users/total-users.component';
 import { MostViewedProgramsComponent } from './components/charts/most-viewed-programs/most-viewed-programs.component';
+import { DevicesUsageComponent } from './components/charts/devices-usage/devices-usage.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MostViewedProgramsComponent } from './components/charts/most-viewed-pro
     DeviceVisualizationComponent,
     MostViewedChannelsNowComponent,
     TotalUsersComponent,
-    MostViewedProgramsComponent
+    MostViewedProgramsComponent,
+    DevicesUsageComponent
   ],
   imports: [
     BrowserModule,

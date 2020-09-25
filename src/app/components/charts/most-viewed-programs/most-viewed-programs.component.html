@@ -1,1 +1,17 @@
-<p>most-viewed-programs works!</p>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Programa</th>
+        <th scope="col">Usuarios</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let program of data">
+        <td scope="row">
+            <img [src]="program.image">
+            {{program.name}}
+            <small>({{program.startTime}} - {{program.duration}}min)</small></td>
+        <td>{{program.users}}</td>
+      </tr>
+    </tbody>
+  </table>
