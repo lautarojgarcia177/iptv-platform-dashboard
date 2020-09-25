@@ -7,32 +7,30 @@ import { Component, Input } from '@angular/core';
 })
 export class UserPlatformComponent {
 
-  @Input() title = 'Cantidad de usuarios conectados';
-
-  single = [
-    {
-      name: 'App Android Mobile',
-      value: 1
+  options = {
+    tooltip: {
+      trigger: 'item',
+      formatter: '{a} <br/>{b} : {c} ({d}%)',
     },
-    {
-      name: 'Browser PC',
-      value: 7
+    legend: {
+      orient: 'vertical',
+      left: 'left',
+      data: ['App Android Mobile', 'Browser PC', 'App Android STB'],
     },
-    {
-      name: 'App Android STB',
-      value: 58
-    },
-  ];
-
-  // options
-  showLabels = true;
-
-  colorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C']
+    series: [
+      {
+        name: 'Dispositivo',
+        type: 'pie',
+        radius: '80%',
+        center: ['50%', '50%'],
+        animation: false,
+        data: [
+          { value: 1, name: 'App Android Mobile' },
+          { value: 7, name: 'Browser PC' },
+          { value: 58, name: 'App Android STB' },
+        ],
+      },
+    ],
   };
-
-  constructor() {
-    Object.assign(this);
-  }
 
 }

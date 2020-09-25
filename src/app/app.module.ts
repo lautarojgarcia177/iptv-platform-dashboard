@@ -9,13 +9,23 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChannelsViewsComponent } from './components/charts/channels-views/channels-views.component';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { MostViewedChannelsComponent } from './components/charts/most-viewed-channels/most-viewed-channels.component';
+import { DeviceVisualizationComponent } from './components/charts/device-visualization/device-visualization.component';
+import { MostViewedChannelsNowComponent } from './components/charts/most-viewed-channels-now/most-viewed-channels-now.component';
+import { TotalUsersComponent } from './components/charts/total-users/total-users.component';
+import { MostViewedProgramsComponent } from './components/charts/most-viewed-programs/most-viewed-programs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     UserPlatformComponent,
-    ChannelsViewsComponent
+    ChannelsViewsComponent,
+    MostViewedChannelsComponent,
+    DeviceVisualizationComponent,
+    MostViewedChannelsNowComponent,
+    TotalUsersComponent,
+    MostViewedProgramsComponent
   ],
   imports: [
     BrowserModule,

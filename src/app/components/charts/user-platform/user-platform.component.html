@@ -1,13 +1,1 @@
-<div class="card">
-    <div class="card-body">
-      <h5 class="card-title">{{title}}</h5>
-      <ngx-charts-pie-chart
-        [scheme]="colorScheme"
-        [results]="single"
-        [legend]="true"
-        [legendTitle]="''"
-        [legendPosition]="'below'"
-        >
-       </ngx-charts-pie-chart> 
-    </div>
-  </div>
+<div echarts [options]="options" class="echart"></div>
